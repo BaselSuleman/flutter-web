@@ -64966,7 +64966,7 @@ s=A.aF(a,p,o).w.a.a<A.bV(B.ah)?$.SS():$.aq2()
 s=A.dN("Bassle Suleman",p,p,p,p,p,!0,p,s,A.aF(a,p,o).w.a.a<A.bV(B.a_)?B.b_:B.aw,p,p)
 r=A.aF(a,p,o).w.a.a<A.bV(B.a_)?A.aF(a,p,o).w.a.a-20:A.aF(a,p,o).w.a.a/2.5
 q=A.aF(a,p,o).w.a.a<A.bV(B.ah)?$.SQ():$.oM()
-return A.iq(A.a([m,B.vt,s,B.M1,A.lC(A.dN("Flutter developer with +4 years of experience. I have completed many projects that prove my ability to provide creative and high-quality solutions.",p,p,p,p,p,!0,p,q,A.aF(a,p,o).w.a.a<A.bV(B.a_)?B.b_:B.aw,p,p),p,r),B.M2,B.DO],t.p),n,B.H,B.G)}}
+return A.iq(A.a([m,B.vt,s,B.M1,A.lC(A.dN("Flutter developer with +5 years of experience. I have completed many projects that prove my ability to provide creative and high-quality solutions.",p,p,p,p,p,!0,p,q,A.aF(a,p,o).w.a.a<A.bV(B.a_)?B.b_:B.aw,p,p),p,r),B.M2,B.DO],t.p),n,B.H,B.G)}}
 A.H7.prototype={
 I(a){var s=this,r=null,q=t.p,p=A.a([],q),o=s.c
 if(o.f!=null){q=A.a([],q)
