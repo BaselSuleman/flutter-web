@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+If you are serving your web app in a path other than the root, change the
+href value below to reflect the base path you are serving from.
+-->
+    <base href="/flutter-web/" />
+    <meta charset="UTF-8" />
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0A0A0F" />
+
+    <!-- Primary meta tags -->
+    <title>Bassel Suleman · Senior Flutter Developer & Designer</title>
+    <meta name="title" content="Bassel Suleman · Senior Flutter Developer & Designer" />
+    <meta name="description"
+        content="Bassel Suleman — Senior mobile & web developer and designer with 6+ years of experience building premium Flutter and iOS applications with thoughtful, beautiful user experiences." />
+    <meta name="keywords"
+        content="Bassel Suleman, Flutter Developer, Mobile Developer, iOS Developer, UI/UX Designer, Dart, Portfolio" />
+    <meta name="author" content="Bassel Suleman" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Bassel Suleman · Senior Flutter Developer & Designer" />
+    <meta property="og:description"
+        content="Senior mobile & web developer and designer crafting premium Flutter and iOS applications." />
+    <meta property="og:image" content="icons/Icon-512.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Bassel Suleman · Senior Flutter Developer & Designer" />
+    <meta name="twitter:description"
+        content="Senior mobile & web developer and designer crafting premium Flutter and iOS applications." />
+    <meta name="twitter:image" content="icons/Icon-512.png" />
+
+    <!-- iOS meta tags & icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Bassel Suleman" />
+    <link rel="apple-touch-icon" href="icons/Icon-192.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="manifest" href="manifest.json" />
+
+    <script>
+        // The value below is injected by flutter build, do not touch.
+        const serviceWorkerVersion = "3806664780";
+    </script>
+    <script src="flutter.js" defer></script>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            background-color: #0A0A0F;
+        }
+        #loading {
+            position: fixed;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #0A0A0F;
+            z-index: 9999;
+            transition: opacity 0.4s ease;
+        }
+        #loading .spinner {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            border: 4px solid rgba(139, 92, 246, 0.18);
+            border-top-color: #8B5CF6;
+            border-right-color: #6366F1;
+            animation: spin 0.9s linear infinite;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            #loading .spinner { animation-duration: 2.4s; }
+        }
+    </style>
+</head>
+
+<body>
+<div id="loading">
+    <div class="spinner"></div>
+</div>
+<script>
+    window.addEventListener('load', function (ev) {
+        _flutter.loader.loadEntrypoint({
+            serviceWorker: {
+                serviceWorkerVersion: serviceWorkerVersion,
+            },
+            onEntrypointLoaded: function (engineInitializer) {
+                engineInitializer
+                    .initializeEngine()
+                    .then(function (appRunner) {
+                        appRunner.runApp();
+                    });
+            },
+        });
+    });
+    window.addEventListener('flutter-first-frame', function () {
+        var el = document.getElementById('loading');
+        if (el) {
+            el.style.opacity = '0';
+            setTimeout(function () { el.remove(); }, 400);
+        }
+    });
+</script>
+</body>
+</html>
